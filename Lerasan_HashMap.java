@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Lerasan_HashMap {
 
     public static void main(String[] args) {
-        // Declare a HashMap to store student names and their scores
+        // Declaring HashMap
         HashMap<String, Integer> Scores = new HashMap<>();
 
-        // Add at least five student names and scores
+        // creating students along with their scores
         Scores.put("Alice", 85);
         Scores.put("John", 90);
         Scores.put("Mark", 78);
@@ -18,7 +18,7 @@ public class Lerasan_HashMap {
 
         Scanner sc = new Scanner(System.in);
 
-        // Ask the user for a student's name and retrieve their score
+        // Asking the user for a student's name to retrieve their score
         System.out.print("Enter the student's name: ");
         String name = sc.nextLine();
         if (Scores.containsKey(name)) {
@@ -40,7 +40,7 @@ public class Lerasan_HashMap {
         }
         System.out.println(" ");
 
-        // Print all student names and their scores
+        // display all student names and their scores
         System.out.println("List of students and their scores: ");
         for (String k : Scores.keySet()) {
             System.out.print(k + "-");
